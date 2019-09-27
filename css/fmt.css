@@ -45,7 +45,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .fmt-ul{list-style-type:none;padding:0;margin:0}.fmt-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.fmt-ul li:last-child{border-bottom:none}
 .fmt-tooltip,.fmt-display-container{position:relative}.fmt-tooltip .fmt-text{display:none}.fmt-tooltip:hover .fmt-text{display:inline-block}
 .fmt-ripple:active{opacity:0.5}.fmt-ripple{transition:opacity 0s}
-.fmt-ripple-soft:active{opacity:0.5}.fmt-ripple-soft{transition:opacity 0.9s}
+.fmt-ripple-soft:active{opacity:0.5;}.fmt-ripple-soft{transition:opacity 0.9s}
 .fmt-ripple-hard:active{opacity:0}.fmt-ripple-hard{transition:opacity 0.5s}
 .fmt-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
 .fmt-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
