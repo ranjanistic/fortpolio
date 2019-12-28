@@ -12,9 +12,8 @@
         <title>Priyanshu Ranjan | FortPolio</title>
     </head>
     <script lang="javascript">
-		function fullScreen(theURL) {
-            window.open(theURL, '', 'fullscreen=yes, scrollbars=none');
-        }
+        //alert('PC/desktop recommended since mobile version is still under construction.');
+	
         let prevScrollpos = window.pageYOffset;
       window.onscroll = function() {
         let currentScrollPos = window.pageYOffset;
@@ -31,7 +30,14 @@
         }
         prevScrollpos = currentScrollPos;
       }
+
+      function seg3nav(){
+          document.getElementById("homebutt").style.backgroundColor = "#2196F3FF";
+      }
     </script>
+    <noscript class="fmt-center fmt-bottom fmt-animate-fading-fast" style="background-color: red; color: white; font-weight: bold; font-size: 23px">
+        Please enable javascript or use a modern browser.
+    </noscript>
     <style>
         a{
             text-decoration: none;
@@ -180,7 +186,7 @@
                             You said hello,<br />we are connected now.<br />
 							
 							<div class="fmt-center" style="padding-top: 2em">
-                                    <a href="#segment3" class="btn fmt-ripple-soft fmt-indigo " style="padding: 12px; border-radius: 12px; font-size: 23px;margin-right: 12px">Great!</a>
+                                    <a href="#segment3" class="btn fmt-ripple-soft fmt-indigo " style="padding: 12px; border-radius: 12px; font-size: 23px;margin-right: 12px" onclick="seg3nav()">Great!</a>
                                 <a href="#" class="btn fmt-ripple-soft fmt-pink " style="padding: 12px; border-radius: 12px; font-size: 23px">Oh I didn't</a>
                             
                             </div>
@@ -188,8 +194,40 @@
 				</div>
         </div>
         <!--endof segment2-->
-		<div class="fmt-center" id="segment3">
-            Segment 3
+        <div class="" id="segment3" style="border-top: 9px solid #2196F3FF;border-top-left-radius: 12px">
+            <div class="fmt-row" style="padding: 33px; font-size: 53px; font-weight: bold">
+                Skillset | 
+                <span style="font-size: 22px">of course mine.</span>
+            </div>
+            <div class="fmt-row" style="padding: 12px 33px 12px 33px">
+                <div class="fmt-col card fmt-third" style="border-radius: 22px; margin: px;">
+                    <img src="img/node-joints.svg" alt="skill1" class="fmt-center" width="400px">
+                    <div class="fmt-card fmt-center fmt-light-gray fmt-hover-white"; style="transition: 0.4s">
+                        <img src="img/face.svg" alt="skilllogo1" class="fmt-center fmt-hover-shadow  fmt-circle fmt-blue" style="margin-top:-102px ; transition: 0.2s" width="180px">
+                        <p style="text-align: center; font-size: 18px; padding: 92px">
+                            Programming
+                        </p>
+                    </div>
+                </div>
+                <div class="fmt-col card fmt-third"style="border-radius: 22px">
+                        <img src="img/node-joints.svg" alt="skill1" class="fmt-center" width="400px">
+                        <div class="fmt-card fmt-center fmt-light-gray">
+                            <img src="img/face.svg" alt="skilllogo1" class="fmt-center fmt-circle fmt-blue" style="margin-top:-52px ;" width="80px">
+                            <p style="text-align: center; font-size: 18px; padding: 12px">
+                                Designing
+                            </p>
+                        </div>
+                </div>
+                <div class="fmt-col card fmt-third"style="border-radius: 22px">
+                        <img src="img/node-joints.svg" alt="skill1" class="fmt-center" width="400px">
+                        <div class="fmt-card fmt-center fmt-light-gray">
+                            <img src="img/face.svg" alt="skilllogo1" class="fmt-center fmt-circle fmt-blue" style="margin-top:-52px ;" width="80px">
+                            <p style="text-align: center; font-size: 18px; padding: 12px">
+                                Exploring
+                            </p>
+                        </div>
+                </div>
+            </div>
 		</div>
     </body>
 </html>
