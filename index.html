@@ -9,109 +9,34 @@
         <link rel="stylesheet" href="css/Raleway.css">
         <link rel="stylesheet" href="css/Montserrat.css">
         <link rel="icon" href="img/portico.png">
-        <title>Priyanshu Ranjan | FortPolio</title>
+        <title>Priyanshu Ranjan</title>
     </head>
     <script lang="javascript">
         //alert('PC/desktop recommended since mobile version is still under construction.');
 	
-        let prevScrollpos = window.pageYOffset;
-      window.onscroll = function() {
-        let currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("homebutt").style.backgroundColor = "#673ab7";
-            document.getElementById("homebutt").style.color = "#ffffff";
-            document.getElementById("biomebutt").style.backgroundColor = "#673ab7";
-            document.getElementById("biomebutt").style.color = "#ffffff";
-        } else {
-          document.getElementById("homebutt").style.backgroundColor = "#00000000";
-          document.getElementById("homebutt").style.color = "#000000";
-          document.getElementById("biomebutt").style.backgroundColor = "#00000000";
-          document.getElementById("biomebutt").style.color = "#000000";
-        }
-        prevScrollpos = currentScrollPos;
-      }
-
+        
       function seg3nav(){
           document.getElementById("homebutt").style.backgroundColor = "#2196F3FF";
       }
     </script>
-    <noscript class="fmt-center fmt-bottom fmt-animate-fading-fast" style="background-color: red; color: white; font-weight: bold; font-size: 23px">
-        Please enable javascript or use a modern browser.
-    </noscript>
     <style>
-        a{
-            text-decoration: none;
-        }
-        html{
-            scroll-behavior: smooth;
-            scrollbar-color: #dfdfdf;
-        }
-        body{
-            font-family: 'Raleway';
-            background-color: #dfdfdf
-        }
-        #navbar{
-            font-family: 'Montserrat';
-            transition: 1s;
-        }
-        .seconeback{
-            background-image: url("img/connectivity.svg");
+        .base-body{
+            background-image: url('img/back-testing.svg');
             background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 25%;
-            background-position-x: 15em;
-            background-position-y: 12em
-        }
-		.seconebackmini{
-            background-image: url("img/connectivity.svg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 80%;
-			background-position: relative;
-            background-position-x: 4em;
-            background-position-y: 5em
-        }
-        .sectwobackfill{
-            background-image: url("img/node-pattern.svg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100%;
-            background-position-x: 0em;
-            background-position-y: 3em
-        }
-        .sectwoback{
-            background-image: url("img/nodes.svg");
-            background-repeat: no-repeat;
-            background-attachment: fixe;
-            background-size: 100%;
-            background-position-x: 0em;
-            background-position-y: 3em
-        }
-        .sectwobackfillmini{
-            background-image: url("img/node-pattern.svg");
-            background-repeat: no-repeat;
-            position: relative;
-            
-            background-attachment: fixed;
-            background-size: 100%;
-            background-position-x: 0em;
-            background-position-y: 6em
-        }
-        .sectwobackmini{
-            background-image: url("img/nodes.svg");
-            background-repeat: no-repeat;
-            background-attachment: fixe;
-            background-size: 100%;
-            background-position-x: 0em;
-            background-position-y: 1em
+            align-content: center;
+            align-items: center;
+            background-color: #0000ff;
+            align-content: center;
+            font-family: 'QuickSand';
         }
     </style>
-    <body id="body">
+
+    <body class="base-body">
         <div class="fmt-row fmt-top" id="navbar" style="background-color:#00000000">
-            <a href="#" class="fmt-btn btn fmt-ripple fmt-hover-light-grey"  style="padding: 20px; color:#000; font-weight: bold;border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 20px;border-bottom-left-radius: 0px;border-top-width: 0px;border-left-width: 0px;border-right-width: 3px;; border-bottom-width: 3px; border-color: #dfdfdf00;background-color: #673ab7; color: white" id="homebutt">
+            <a href="#" class="fmt-btn btn fmt-ripple fmt-hover-shadow"  style="padding: 20px; color:#fff; font-weight: bold;border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 20px;border-bottom-left-radius: 0px;border-top-width: 0px;border-left-width: 0px;border-right-width: 3px;; border-bottom-width: 3px; border-color: #dfdfdf00; color: white" id="homebutt">
                 Home
             </a>
-            <a href="#" class="fmt-btn btn fmt-ripple fmt-hover-light-gray "  style="padding: 20px; color: #000; font-weight: bold; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;border-top-width: 0px;border-left-width: 3px;border-right-width: 3px;; border-bottom-width: 3px; border-color: #dfdfdf00; background-color: #673ab7; color: white" id="biomebutt">
+            <a href="#" class="fmt-btn btn fmt-ripple fmt-hover-shadow "  style="padding: 20px; color: #fff; font-weight: bold; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;border-top-width: 0px;border-left-width: 3px;border-right-width: 3px;; border-bottom-width: 3px; border-color: #dfdfdf00; color: white" id="biomebutt">
                 Biome
             </a>
             <object class="fmt-right" type="image/svg+xml" data="img/me.svg" width="65px" height="65px" alt="Me" id="myicon"></object>
@@ -119,12 +44,12 @@
 			<a href="https://github.com/ranjanistic"><img class="fmt-right fmt-hide-large fmt-hide-medium fmt-button fmt-circle fmt-white fmt-shadow fmt-ripple" type="image/svg+xml" src="img/github.svg" width="40px" height="40px" style="margin-top: 15px; margin-right: 20px; padding:0px; transition: 0.2s;box-shadow:0 4px 10px 0 #00000033,0 4px 20px 0 #00000030" alt="Github" id="githubicon"></img></a>
             <span class="fmt-round fmt-black fmt-hide-small fmt-right" style="margin-top: 20px; margin-right: -6px;border-radius: 73px;padding: 0px 12px 0px 12px; ">See over</span>
         </div> <!--endof navbar-->
-        <div  style="padding: 130px 20px 20px 20px; background-color: #dfdfdf " id="facepage">
+        <div  style="padding: 130px 20px 20px 20px; " id="facepage">
             <div class="fmt-row seconeback" style="padding-bottom: 50px ">
                 <div class="fmt-col   fmt-hide-small m4 fmt-ble" >
                     <div class="fmt-row fmt-gren" style="margin-left: 50px; margin-top: 100px">
-                        <div class="fmt-left mt-orange" style="font-size: 80px; ">
-                            Hey there!
+                        <div class="fmt-left mt-orange" style="font-size: 80px;color: white; ">
+                            Hey there.
                         </div>
                     </div>
                     <div class="fmt-row fmt-re" style="margin-left: 50px; margin-bottom: 50px">
@@ -133,14 +58,14 @@
                         </div>
                     </div>
                     <div class="fmt-row fmt-indig" style="margin-left: 40px; margin-bottom: 50px" id="startbutt">
-                        <a href="#segment2" class="btn fmt-blue fmt-ripple fmt-border-small fmt-hover-border-blue fmt-hover-shadow"  style="margin: 20px 0px 40px 0px; border-radius: 72px ;padding: 20px 40px 20px 40px; font-size: 30px; border-color: #dfdfdf">Hello</a>
+                        <a href="#segment2" class="btn fmt-blue fmt-ripple fmt-border-small fmt-hover-border-blue fmt-hover-shadow"  style="margin: 20px 0px 40px 0px; border-radius: 72px ;padding: 20px 40px 20px 40px; font-size: 30px; border-color: blue">Hello</a>
                     </div>
                 </div>
                 <div class="fmt-col m2 fmt-center fmt-gren fmt-hide-small" style="margin-top: -50px; margin-left: -80px" id="divider">
-                    <object class="fmt-center fmt-gey" type="image/svg+xml" data="img/dividerthick.svg" height="650px"></object>
+                    <object class="fmt-center fmt-gey" type="image/svg+xml" data="img/dividerthick.sg" height="650px"></object>
                 </div>
                 <div class="fmt-col m5 fmt-right fmt-gren fmt-hide-small fmt-eal" id="deskworker">
-                    <img src="img/deskworker.svg" width="90%" style="margin-top: 20px">
+                    <img src="img/settingview.svg" width="90%" style="margin-top: 20px">
                 </div>
             </div>
             <div class="fmt-col fmt-hide-large fmt-hide-medium seconebackmini" style="margin-top: -100px;" id="facepagemini">
@@ -160,74 +85,4 @@
 				</div>
             </div>
         </div> <!--endof facepage-->
-        <div class="fmt-hide-small sectwobackfill" style="background-color: #dfdfdf;"  id="segment2">
-			<div class="fmt-row fmt-geen fmt-hide-small sectwoback " style="margin-left: 0px; padding-bottom: 12em"> <!-- TODO: remove the padding when next segment finished -->
-                <div class="fmt-container fmt-right fmt-col l8  fmt-ble" style="font-size: 77px; margin: 3em 70px 0px 0px; text-align: right">
-                        Connected.
-                        <p style="font-size: 33px;padding-top: 30px">
-                            You said hello,<br />we are connected now.<br />
-							<p style="font-size: 15px; text-align: center; font-weight: bold"> 
-								If you didn't say hello,<br /> then patterns won't match.
-							</p>
-							<div class="fmt-blue" style="margin-top: 28px">
-                            <a href="#" class="btn fmt-ripple-soft fmt-hover-pink fmt-right fmt-text-pink" style="padding: 12px; border-radius: 12px; font-size: 23px">Oh I didn't</a>
-                            <object class="fmt-right fmt-gey" type="image/svg+xml" data="img/dividerthick.svg" height="50px"></object>
-                            <a href="#segment3" class="btn fmt-ripple-soft fmt-hover-indigo fmt-right fmt-text-indigo" style="padding: 12px; border-radius: 12px; font-size: 23px;margin-right: 12px">Great!</a>
-                            </div>
-                        </p>
-				</div>
-            </div>
-        </div>
-        <!--for small screens-->
-        <div class="fmt-hide-large fmt-hide-medium fmt-go sectwobackmini fmt-row" style="color: black; margin-top: 42em" id="segment2mini">
-                <div class="fmt-row f sectwobackfillmini" style="font-size: 57px; margin: 5em 70px 0px 0px; text-align: right" id="connectedmini">
-                        Connected.
-                        <p style="font-size: 23px;padding-top: 30em">
-                            You said hello,<br />we are connected now.<br />
-							
-							<div class="fmt-center" style="padding-top: 2em">
-                                    <a href="#segment3" class="btn fmt-ripple-soft fmt-indigo " style="padding: 12px; border-radius: 12px; font-size: 23px;margin-right: 12px" onclick="seg3nav()">Great!</a>
-                                <a href="#" class="btn fmt-ripple-soft fmt-pink " style="padding: 12px; border-radius: 12px; font-size: 23px">Oh I didn't</a>
-                            
-                            </div>
-                        </p>
-				</div>
-        </div>
-        <!--endof segment2-->
-        <div class="" id="segment3" style="border-top: 9px solid #2196F3FF;border-top-left-radius: 12px">
-            <div class="fmt-row" style="padding: 33px; font-size: 53px; font-weight: bold">
-                Skillset | 
-                <span style="font-size: 22px">of course mine.</span>
-            </div>
-            <div class="fmt-row" style="padding: 12px 33px 12px 33px">
-                <div class="fmt-col card fmt-third" style="border-radius: 22px; margin: px;">
-                    <img src="img/node-joints.svg" alt="skill1" class="fmt-center" width="400px">
-                    <div class="fmt-card fmt-center fmt-light-gray fmt-hover-white"; style="transition: 0.4s">
-                        <img src="img/face.svg" alt="skilllogo1" class="fmt-center fmt-hover-shadow  fmt-circle fmt-blue" style="margin-top:-102px ; transition: 0.2s" width="180px">
-                        <p style="text-align: center; font-size: 18px; padding: 92px">
-                            Programming
-                        </p>
-                    </div>
-                </div>
-                <div class="fmt-col card fmt-third"style="border-radius: 22px">
-                        <img src="img/node-joints.svg" alt="skill1" class="fmt-center" width="400px">
-                        <div class="fmt-card fmt-center fmt-light-gray">
-                            <img src="img/face.svg" alt="skilllogo1" class="fmt-center fmt-circle fmt-blue" style="margin-top:-52px ;" width="80px">
-                            <p style="text-align: center; font-size: 18px; padding: 12px">
-                                Designing
-                            </p>
-                        </div>
-                </div>
-                <div class="fmt-col card fmt-third"style="border-radius: 22px">
-                        <img src="img/node-joints.svg" alt="skill1" class="fmt-center" width="400px">
-                        <div class="fmt-card fmt-center fmt-light-gray">
-                            <img src="img/face.svg" alt="skilllogo1" class="fmt-center fmt-circle fmt-blue" style="margin-top:-52px ;" width="80px">
-                            <p style="text-align: center; font-size: 18px; padding: 12px">
-                                Exploring
-                            </p>
-                        </div>
-                </div>
-            </div>
-		</div>
     </body>
-</html>
